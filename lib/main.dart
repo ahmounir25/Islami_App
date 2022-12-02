@@ -5,6 +5,7 @@ void main() {
   runApp(MaterialApp(
     routes: {HomeScreen.routeName:(context) => HomeScreen()},
     initialRoute:HomeScreen.routeName ,
+    debugShowCheckedModeBanner: false,
   ));
 }
 
