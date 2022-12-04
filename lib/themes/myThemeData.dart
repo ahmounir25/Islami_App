@@ -12,8 +12,10 @@ class myThemeData {
         elevation: 0,
       ),
       textTheme: TextTheme(
-          headline1: TextStyle(
-              color: blackColor, fontSize: 30, fontWeight: FontWeight.bold)),
+        headline1: TextStyle(
+            color: blackColor, fontSize: 30, fontWeight: FontWeight.bold),
+        headline2: TextStyle(fontSize: 20, color: blackColor),
+      ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: goldColor,
         selectedItemColor: blackColor,
