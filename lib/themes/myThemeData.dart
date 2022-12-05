@@ -21,7 +21,9 @@ class myThemeData {
         backgroundColor: goldColor,
         selectedItemColor: blackColor,
         unselectedItemColor: Colors.white,
-      ));
+      )
+
+  );
 
   static ThemeData darkTheme = ThemeData(
       scaffoldBackgroundColor: Colors.transparent,
