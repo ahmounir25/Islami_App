@@ -50,7 +50,8 @@ class _suraDetailsState extends State<suraDetails> {
                   },
                   separatorBuilder: (context, index) =>
                       Divider(thickness: 1, color: myThemeData.goldColor),
-                  itemCount: versies.length),
+                  itemCount: versies.length
+          ),
         )
       ],
     );
