@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )),
           body:tabsList[currIndex] ,
           bottomNavigationBar: BottomNavigationBar(
+            type: BottomNavigationBarType.shifting,
             currentIndex:currIndex ,
               onTap: (value) {
               currIndex=value;
@@ -41,13 +42,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 label: 'Radio',backgroundColor: myThemeData.goldColor),
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage('assets/images/sebha.png')),
-                label: 'Sebha'),
+                label: 'Sebha',backgroundColor: myThemeData.goldColor),
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage('assets/images/ahadeth.png')),
-                label: 'Ahadeth'),
+                label: 'Ahadeth',backgroundColor: myThemeData.goldColor),
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage('assets/images/moshaf.png')),
-                label: 'Quran'),
+                label: 'Quran',backgroundColor: myThemeData.goldColor),
             // BottomNavigationBarItem(icon: icon),
           ]),
         )
