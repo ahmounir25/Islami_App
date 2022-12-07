@@ -18,7 +18,7 @@ class themeSheet extends StatelessWidget {
               child: themeItem(
                   context, 'Light', provider.theme == ThemeMode.light)),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           InkWell(
               onTap: () {
