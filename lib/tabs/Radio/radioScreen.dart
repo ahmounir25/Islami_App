@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_me/themes/myThemeData.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class radioScreen extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class radioScreen extends StatelessWidget {
           ),
         ),
         Text(
-          'إذاعة القرآن الكريم',
+         AppLocalizations.of(context)!.radio,
           style: Theme.of(context).textTheme.headline1,
         ),
         Container(

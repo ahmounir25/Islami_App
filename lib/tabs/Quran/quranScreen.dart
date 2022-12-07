@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_me/tabs/Quran/suraNameItem.dart';
 import 'package:islami_me/themes/myThemeData.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class quranScreen extends StatelessWidget {
   List<String> suraNames = [
@@ -133,6 +134,7 @@ class quranScreen extends StatelessWidget {
             Expanded(
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.all(10),
                 alignment: Alignment.center,
                 decoration:BoxDecoration(
                   borderRadius: BorderRadius.only(
@@ -144,7 +146,7 @@ class quranScreen extends StatelessWidget {
                   )
                 ),
                 child: Text(
-                  'أسم السورة',
+                  AppLocalizations.of(context)!.suraName,
                   style: Theme.of(context).textTheme.headline1?.copyWith(
                     fontWeight:FontWeight.normal
                   ),

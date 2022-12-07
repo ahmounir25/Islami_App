@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_me/themes/myThemeData.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class sebhaScreen extends StatefulWidget {
   const sebhaScreen({Key? key}) : super(key: key);
@@ -33,11 +34,15 @@ class _sebhaScreenState extends State<sebhaScreen> {
                 Image.asset('assets/images/sebha_body.png'),
               ],
             ),
-            Text(
-              'عدد التسبيحات',
-              style: Theme.of(context).textTheme.headline1,
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 20),
+              child: Text(
+                AppLocalizations.of(context)!.sebha,
+                style: Theme.of(context).textTheme.headline1,
+              ),
             ),
             Container(
+              margin: EdgeInsets.only(bottom: 30),
               width: 100,
               height: 100,
               decoration: BoxDecoration(
@@ -50,9 +55,6 @@ class _sebhaScreenState extends State<sebhaScreen> {
                   style: Theme.of(context).textTheme.headline1,
                 ),
               ),
-            ),
-            SizedBox(
-              height: 10,
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -71,9 +73,12 @@ class _sebhaScreenState extends State<sebhaScreen> {
                   }
                   setState(() {});
                 },
-                child: Text(list[i],style:Theme.of(context).textTheme.headline2?.copyWith(
-                  color: Colors.white,
-                ) ,)),
+                child: Text(
+                  list[i],
+                  style: Theme.of(context).textTheme.headline2?.copyWith(
+                        color: Colors.white,
+                      ),
+                )),
           ],
         ),
       ],

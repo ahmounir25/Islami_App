@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:islami_me/tabs/Ahadeth/ahadethItem.dart';
 import 'package:islami_me/tabs/Quran/suraNameItem.dart';
 import 'package:islami_me/themes/myThemeData.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ahadethScreen extends StatefulWidget {
   @override
@@ -27,6 +28,7 @@ class _ahadethScreenState extends State<ahadethScreen> {
             Expanded(
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.all(10),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
@@ -37,7 +39,7 @@ class _ahadethScreenState extends State<ahadethScreen> {
                       color: myThemeData.goldColor,
                     )),
                 child: Text(
-                  'الأحاديث',
+                  AppLocalizations.of(context)!.ahadeth,
                   style: Theme.of(context)
                       .textTheme
                       .headline1
