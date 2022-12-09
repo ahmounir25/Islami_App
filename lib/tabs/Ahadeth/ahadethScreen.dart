@@ -79,8 +79,8 @@ class _ahadethScreenState extends State<ahadethScreen> {
     List<String> allAhadeth = data.split('#');
     for (int i = 0; i < allAhadeth.length; i++) {
       String hadeth = allAhadeth[i];
-      print(hadeth);
-      print('----------------------------');
+      // print(hadeth);
+      // print('----------------------------');
       List<String> hadethLines = hadeth.trim().split('\n');
       String title = hadethLines[0];
       hadethLines.removeAt(0);

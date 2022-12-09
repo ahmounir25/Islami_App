@@ -65,7 +65,7 @@ class _sebhaScreenState extends State<sebhaScreen> {
                   if (counter < 33) {
                     counter++;
                   } else {
-                    counter = 0;
+                    counter = 1;
                     i++;
                   }
                   if (i == list.length) {

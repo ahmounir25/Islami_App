@@ -4,14 +4,9 @@ import 'package:islami_me/tabs/Ahadeth/ahadethScreen.dart';
 import 'package:islami_me/themes/myThemeData.dart';
 import 'package:provider/provider.dart';
 
-class hadethDetails extends StatefulWidget {
+class hadethDetails extends StatelessWidget {
   static const String routeName = 'hadeth';
 
-  @override
-  State<hadethDetails> createState() => _hadethDetailsState();
-}
-
-class _hadethDetailsState extends State<hadethDetails> {
   @override
   Widget build(BuildContext context) {
     var args = ModalRoute.of(context)?.settings.arguments as hadethContent;
@@ -29,7 +24,9 @@ class _hadethDetailsState extends State<hadethDetails> {
           appBar: AppBar(
               title: Text(
             args.title,
-            style: Theme.of(context).textTheme.headline1,
+            style: Theme.of(context).textTheme.headline1?.copyWith(
+              fontSize: 20
+            ),
           )),
           body: Container(
             // color:Colors.grey.shade300.withOpacity(.5),
